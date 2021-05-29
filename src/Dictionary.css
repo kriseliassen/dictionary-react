@@ -1,0 +1,19 @@
+.Dictionary {
+	padding: 1.5rem;
+	background: var(--clr-dark);
+}
+
+.Dictionary h1,
+.Dictionary p {
+	text-align: center;
+	color: var(--clr-light);
+}
+
+.Dictionary h1 {
+	font-size: var(--fs-h1);
+}
+
+.Dictionary p {
+	font-weight: var(--fw-light);
+	margin-bottom: 1.5rem;
+}
