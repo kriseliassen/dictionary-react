@@ -36,6 +36,7 @@
 	display: flex;
 	flex-direction: column;
 	background: var(--clr-light);
+	border-radius: 15px;
 }
 
 .Dictionary .search-prompt {
