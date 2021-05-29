@@ -5,11 +5,6 @@
 	--fw-light: 300;
 	--fw-bold: 700;
 
-	--fs-h1: 3rem;
-	--fs-h2: 2.25rem;
-	--fs-h3: 1.15rem;
-	--fs-body: 1rem;
-
 	--clr-light: #d5eeff;
 	--clr-dark: #005689;
 	--clr-accent: #ff895d;
@@ -27,18 +22,22 @@
 }
 
 body {
-	margin: 0;
 	font-family: var(--ff-body);
+	font-size: var(--fs-body);
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
 
 /* Typography */
 
-h1 {
-	font-family: var(--ff-header);
-}
-
 a {
 	text-decoration: none;
+}
+
+p {
+	line-height: 1.5;
+}
+
+strong {
+	font-style: normal;
 }

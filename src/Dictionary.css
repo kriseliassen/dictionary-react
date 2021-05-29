@@ -3,34 +3,47 @@
 	background: var(--clr-dark);
 }
 
-.Dictionary h1,
-.Dictionary p {
+/* TYPOGRAPHY */
+
+.Dictionary .header-title,
+.Dictionary .header-subtitle {
 	text-align: center;
 	color: var(--clr-light);
 }
 
-.Dictionary h1 {
-	font-size: var(--fs-h1);
+.Dictionary .header-title {
+	font-size: 4rem;
+	font-family: var(--ff-header);
 }
 
-.Dictionary p {
+.Dictionary .header-subtitle {
+	font-size: 1.25rem;
+	font-family: var(--ff-body);
 	font-weight: var(--fw-light);
+	color: var(--clr-light);
+	text-align: center;
 	margin-bottom: 1.5rem;
 }
 
-.Dictionary .search-form {
-	padding: 1rem 0;
+.Dictionary .search-prompt {
+	font-size: 1.75rem;
+}
+
+/* LAYOUT */
+
+.Dictionary .container {
+	padding: 1rem;
 	display: flex;
 	flex-direction: column;
 	background: var(--clr-light);
 }
 
-.Dictionary .search-form h2 {
+.Dictionary .search-prompt {
 	text-align: center;
 	margin-bottom: 1rem;
 }
 
-.Dictionary .search-wrapper {
+.Dictionary .search-form {
 	width: 70%;
 	min-width: 100px;
 	align-self: center;
@@ -58,8 +71,3 @@
 	outline: none;
 	border: 1.5px solid var(--clr-accent);
 }
-
-/* .Dictionary .random-word {
-	grid-row: 3 / 4;
-	grid-column: 2 / 9;
-} */

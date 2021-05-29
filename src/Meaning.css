@@ -1,0 +1,18 @@
+.Meaning .result-partOfSpeech {
+	font-size: 1.25rem;
+	margin: 0.75rem 0;
+}
+
+.Meaning .result-definition {
+	margin-bottom: 0.5rem;
+}
+
+.Meaning .result-example,
+.Meaning .result-synonym {
+	padding: 0.2rem 0 0 1rem;
+	font-size: 0.9rem;
+}
+
+.Meaning .result-example {
+	font-style: italic;
+}
