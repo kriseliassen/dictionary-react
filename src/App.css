@@ -1,0 +1,7 @@
+.App-footer {
+	background: var(--clr-dark);
+	color: var(--clr-light);
+	text-align: center;
+	font-size: 0.8rem;
+	padding: 2.5rem 0;
+}

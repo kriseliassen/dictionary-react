@@ -3,8 +3,11 @@ import Dictionary from "./Dictionary";
 
 function App() {
 	return (
-		<div className="App">
-			<Dictionary />
+		<div>
+			<main className="App">
+				<Dictionary />
+			</main>
+			<footer className="App-footer">Open-source by Kristin Eliassen</footer>
 		</div>
 	);
 }
