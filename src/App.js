@@ -7,7 +7,16 @@ function App() {
 			<main className="App">
 				<Dictionary />
 			</main>
-			<footer className="App-footer">Open-source by Kristin Eliassen</footer>
+			<footer className="App-footer">
+				<a href="https://github.com/kriseliassen/dictionary-react">
+					Open-source{" "}
+				</a>
+				by
+				<a href="https://awesome-yonath-d91ac7.netlify.app/index.html">
+					{" "}
+					Kristin Eliassen
+				</a>
+			</footer>
 		</div>
 	);
 }

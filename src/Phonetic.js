@@ -7,8 +7,6 @@ export default function Phonetic(props) {
 	function playSound() {
 		audio.play();
 	}
-
-	console.log(props.phonetic);
 	return (
 		<div className="Phonetic">
 			<i className="far fa-play-circle phonetic-icon" onClick={playSound}></i>

@@ -40,6 +40,7 @@ export default function Dictionary() {
 						placeholder="Search"
 						className="search-field"
 						autoComplete="off"
+						autoFocus={true}
 						onChange={handleKeywordChange}
 					/>
 				</form>
