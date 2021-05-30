@@ -1,0 +1,18 @@
+.Phonetic {
+	display: flex;
+	align-items: center;
+}
+
+.Phonetic .phonetic-icon {
+	font-size: 1.75rem;
+	margin-right: 0.5rem;
+}
+
+.Phonetic .phonetic-icon:hover {
+	cursor: pointer;
+	color: var(--clr-accent);
+}
+
+.Phonetic .phonetic-text {
+	display: inline;
+}
