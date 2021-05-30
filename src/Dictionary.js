@@ -42,7 +42,6 @@ export default function Dictionary() {
 			<div className="container">
 				<h2 className="search-prompt">What word do you want to look up?</h2>
 				<form className="search-form" onSubmit={search}>
-					<i className="fas fa-search search-icon"></i>
 					<input
 						type="search"
 						placeholder="Search"
@@ -51,6 +50,7 @@ export default function Dictionary() {
 						autoFocus={true}
 						onChange={handleKeywordChange}
 					/>
+					<i className="fas fa-search search-icon" onClick={search}></i>
 				</form>
 				<Results results={results} />
 				{errorMsg && <p className="errorMsg">{errorMsg}</p>}
