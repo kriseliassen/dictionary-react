@@ -11,12 +11,12 @@ export default function Meaning(props) {
 					<div key={index} className="result-definition">
 						{/* Definition(s) */}
 						<p className="definition">
-							{index + 1}. {definition.definition}
+							{index + 1}) {definition.definition}
 						</p>
 						{/* Example(s) */}
 						{definition.example ? (
 							<p className="result-example">
-								<strong>Example: </strong>
+								<strong>Used in a sentence: </strong>
 								{definition.example}
 							</p>
 						) : null}

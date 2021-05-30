@@ -1,6 +1,7 @@
 .Meaning .result-partOfSpeech {
 	font-size: 1.25rem;
 	margin: 0.75rem 0;
+	color: var(--clr-accent);
 }
 
 .Meaning .result-definition {
