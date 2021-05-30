@@ -8,6 +8,7 @@ import "./Results.css";
 export default function Dictionary() {
 	let [keyword, setKeyword] = useState("");
 	let [results, setResults] = useState(null);
+	let [errorMsg, setErrorMsg] = useState("");
 
 	function handleResponse(response) {
 		setResults(response.data[0]);
@@ -22,7 +23,14 @@ export default function Dictionary() {
 
 		// documentation: https://dictionaryapi.dev/
 		let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en_US/${keyword}`;
-		axios.get(apiUrl).then(handleResponse);
+		axios
+			.get(apiUrl)
+			.then(handleResponse)
+			.catch((err) => {
+				setErrorMsg(
+					"I'm sorry, we can't find the word you are looking for. Try searching for a different word!"
+				);
+			});
 	}
 
 	return (
@@ -45,6 +53,7 @@ export default function Dictionary() {
 					/>
 				</form>
 				<Results results={results} />
+				{errorMsg && <p className="errorMsg">{errorMsg}</p>}
 			</div>
 		</div>
 	);
